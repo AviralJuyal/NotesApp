@@ -26,6 +26,10 @@ export default function Notesshow(props) {
                     <button className="btn btn-primary" onClick={()=>{
                         Delete(ele.index);
                     }}>Delete</button>
+
+                    <button className="btn btn-primary" onClick={()=>{
+                        props.edit(ele.index);
+                    }}>Edit</button>
                 </div>
             </div>
         )

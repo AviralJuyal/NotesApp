@@ -14,6 +14,12 @@ export default function TextArea(props) {
         sethead('');
         settext('');
     }
+
+    const edit =(id)=>{
+      sethead(props.data[id].head);
+      settext(props.data[id].text);
+      
+    }
     
 
   return (
@@ -26,7 +32,7 @@ export default function TextArea(props) {
     <button type= 'button' id='btn' className='btn btn-primary my-2' onClick = {textSubmit} >Submit</button>
     </form>
     <div className="container mx-2" style={{display :'flex'}}>
-        <NotesShow data = {props.data} setdata = {props.setData}  />
+        <NotesShow data = {props.data} setdata = {props.setData} edit = {edit} />
 
     </div>
     {/* {console.log('hello')} */}
