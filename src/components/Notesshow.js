@@ -21,7 +21,7 @@ export default function Notesshow(props) {
                 <h3>{ele.head}</h3>
                     <p className="card-text">{ele.text}</p>
                     
-                    <button className="btn btn-primary" onClick={()=>{
+                    <button className="btn btn-primary mx-2" onClick={()=>{
                         Delete(ele.index);
                     }}>Delete</button>
 
