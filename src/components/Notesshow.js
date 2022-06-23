@@ -5,11 +5,9 @@ export default function Notesshow(props) {
  
   
     const Delete = (id)=>{
-        // console.log(id);
         const x = props.data.filter((Element)=> Element.index !== id) 
         props.setdata(x)
-        // props.data.(id);
-        // console.log(props.data);
+  
     }
 
   return (       
